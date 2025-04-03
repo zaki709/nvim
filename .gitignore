@@ -6,3 +6,8 @@ debug
 foo.*
 *.log
 data
+
+# ignore Lazy-lock.json You can ignore this file.
+# https://github.com/LazyVim/LazyVim/discussions/850
+
+lazy-lock.json
