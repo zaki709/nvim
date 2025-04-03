@@ -4,3 +4,7 @@
 
 vim.opt.number = true
 vim.opt.relativenumber = false
+
+-- Use UTF-8 for Japanese Chat with Copilot
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
