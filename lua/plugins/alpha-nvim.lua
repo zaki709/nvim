@@ -40,7 +40,7 @@ return {
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⢃⢘⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠀⡠⠎⠀⠀⠀⢀⣼⣿⣳⢿⣻⣽⣿⣿⡻⣞⠿⠻⠉⠂⠁⠀⠀⠀⠀",
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠀⠂⠀⠀⢀⠀⠀⠀⠀⢀⡀⣀⠀⠀⠀⠀⠀⠀⠀⠘⠁⠰⣉⡀⢀⣀⠐⣽⡟⠗⠛⠫⠙⠊⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     }
-    vim.cmd([[hi zaki_header guifg=#00bfff]]) --deep sky blue
+    vim.cmd([[hi zaki_header guifg=#00bfff]])
     dashboard.section.header.opts.hl = "zaki_header"
   end,
 }
