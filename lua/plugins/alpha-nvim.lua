@@ -4,7 +4,7 @@ return {
   config = function()
     require("alpha").setup(require("alpha.themes.dashboard").config)
 
-    dashboard = require("alpha.themes.dashboard")
+    local dashboard = require("alpha.themes.dashboard")
     dashboard.section.header.val = {
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⢟⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⠓⢧⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⢈⡌⢣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢿⠃⠙⢦⢹⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
@@ -40,5 +40,7 @@ return {
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⢃⢘⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠀⡠⠎⠀⠀⠀⢀⣼⣿⣳⢿⣻⣽⣿⣿⡻⣞⠿⠻⠉⠂⠁⠀⠀⠀⠀",
       "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠀⠂⠀⠀⢀⠀⠀⠀⠀⢀⡀⣀⠀⠀⠀⠀⠀⠀⠀⠘⠁⠰⣉⡀⢀⣀⠐⣽⡟⠗⠛⠫⠙⠊⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     }
+    vim.cmd([[hi zaki_header guifg=#00bfff]]) --deep sky blue
+    dashboard.section.header.opts.hl = "zaki_header"
   end,
 }
