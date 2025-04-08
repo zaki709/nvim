@@ -24,8 +24,8 @@
 - [mason]()
 
 ## 📌Git
-
 - [gitlinker](https://github.com/linrongbin16/gitlinker.nvim)
+- [diffview](https://github.com/sindrets/diffview.nvim?tab=readme-ov-file)
 
 ## 🤖AI
 
