@@ -19,6 +19,7 @@
 ## ⌨ Editor
 - [copy file path](https://github.com/h3pei/copy-file-path.nvim)
 - [comment](https://github.com/numToStr/Comment.nvim)
+- [treesj](https://github.com/Wansmer/treesj)
 
 ## LSP
 - [mason]()
