@@ -30,5 +30,9 @@
 
 ## 🤖AI
 
-- [Copilot](https://github.com/github/copilot.vim)
-- [CopilotChat](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
+- [avante](https://github.com/yetone/avante.nvim)
+- [Copilot](https://github.com/zbirenbaum/copilot.lua)
+
+# About AI
+
+This editor use `avante` for AI coding support. `avante` can select the AI model from a couple of models. I selected `copilot` model as Supporting AI.
