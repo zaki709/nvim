@@ -6,6 +6,11 @@ return {
     -- add any opts here
     -- for example
     provider = "copilot",
+    copilot = {
+      endpoint = "https://api.github.com/copilot",
+      modedl = "gpt-4o-mini",
+      language = "jp",
+    },
     openai = {
       endpoint = "https://api.openai.com/v1",
       model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
