@@ -13,7 +13,7 @@ lspconfig.solargraph.setup({
   end,
   settings = {
     solargraph = {
-      diagnostics = true, -- ソーラグラフの診断機能をON
+      diagnostics = false, -- ソーラグラフの診断機能をON
     },
   },
 })
