@@ -63,6 +63,45 @@ return {
       })
     end,
   },
+
+  -- Gruvbox theme
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    config = function()
+      require("gruvbox").setup({
+        transparent_mode = true,
+      })
+    end,
+  },
+
+  -- Tokyonight theme
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    config = function()
+      require("tokyonight").setup({
+        transparent = true,
+        styles = {
+          sidebars = "transparent",
+          floats = "transparent",
+        },
+      })
+    end,
+  },
+
+  -- Catppuccin theme
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = true,
+    config = function()
+      require("catppuccin").setup({
+        transparent_background = true,
+      })
+    end,
+  },
+
   {
     "LazyVim/LazyVim",
     opts = {
