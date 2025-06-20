@@ -8,7 +8,6 @@ return {
     provider = "copilot",
     copilot = {
       endpoint = "https://api.github.com/copilot",
-      modedl = "gpt-4o-mini",
       language = "jp",
     },
     openai = {
