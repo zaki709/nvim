@@ -26,19 +26,12 @@ return {
         theme = {
           variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
           saturation = 1, -- accepts a value between 0 and 1. 0 will be fully desaturated (greyscale) and 1 will be the full color (default)
-          highlights = {
-            -- Highlight groups to override, adding new groups is also possible
-            -- Example:
-            Comment = { fg = "#696969", bg = "NONE", italic = true },
-
-            -- Complete list can be found in `lua/cyberdream/theme.lua`
-          },
-
           -- Override a highlight group entirely using the color palette
           overrides = function(colors) -- NOTE: This function nullifies the `highlights` option
-            -- Example:
+            -- Ensure proper text colors for both modes
             return {
-              Comment = { fg = colors.green, bg = "NONE", italic = true },
+              Normal = { fg = colors.fg, bg = colors.bg },
+              Comment = { fg = colors.grey, bg = "NONE", italic = true },
               ["@property"] = { fg = colors.magenta, bold = true },
             }
           end,
@@ -46,10 +39,8 @@ return {
           -- Override a color entirely
           colors = {
             -- For a list of colors see `lua/cyberdream/colours.lua`
-            -- Example:
-            bg = "#000000",
-            green = "#00ff00",
-            magenta = "#ff00ff",
+            -- Dark mode: white text on dark background
+            -- Light mode: black text on light background
           },
         },
 
