@@ -1,5 +1,6 @@
 return {
   "yetone/avante.nvim",
+  enabled = false, -- Disable avante plugin (can be re-enabled by changing to true)
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
   opts = {
