@@ -1,6 +1,7 @@
 return {
   "shellRaining/hlchunk.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  -- Load only after buffer is read for better startup performance
+  event = "BufReadPost",
   config = function()
     require("hlchunk").setup({
       chunk = {

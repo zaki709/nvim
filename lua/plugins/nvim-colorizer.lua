@@ -1,7 +1,7 @@
 return {
   "norcalli/nvim-colorizer.lua",
-  ft = { "css", "html", "javascript", "lua", "vim", "yml", "yaml" }, -- 必要に応じてファイルタイプを追加
-  event = "BufReadPre",
+  -- Only load when specific file types are opened for better startup performance
+  ft = { "css", "html", "javascript", "lua", "vim", "yml", "yaml", "scss", "sass", "json" },
   config = function()
     require("colorizer").setup({
       "yml",
@@ -9,10 +9,13 @@ return {
       "lua",
       "css",
       "javascript",
+      "scss",
+      "sass",
+      "json",
     }, {
       RGB = true, -- #RGB hex codes
       RRGGBB = true, -- #RRGGBB hex codes
-      names = true, -- "Name" codes like Blue
+      names = false, -- Disable "Name" codes for performance
       RRGGBBAA = true, -- #RRGGBBAA hex codes
       rgb_fn = true, -- CSS rgb() and rgba() functions
       hsl_fn = true, -- CSS hsl() and hsla() functions

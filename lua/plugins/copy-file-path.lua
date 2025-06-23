@@ -1,8 +1,9 @@
 return {
   "mogulla3/copy-file-path.nvim",
   version = "*",
-  opts = {
-    vim.keymap.set("n", "<Leader>cp", "<Cmd>CopyFilePath<CR>", { noremap = true, silent = true }),
+  -- Lazy load on keymap for faster startup
+  keys = {
+    { "<Leader>cp", "<Cmd>CopyFilePath<CR>", desc = "Copy file path", noremap = true, silent = true },
   },
   config = function() end,
 }
