@@ -1,7 +1,7 @@
 return {
   "norcalli/nvim-colorizer.lua",
   -- Only load when specific file types are opened for better startup performance
-  ft = { "css", "html", "javascript", "lua", "vim", "yml", "yaml", "scss", "sass", "json" },
+  ft = { "css", "html", "javascript", "lua", "vim", "yml", "yaml", "scss", "sass", "json", "tsx", "ts" },
   config = function()
     require("colorizer").setup({
       "yml",
