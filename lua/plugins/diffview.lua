@@ -1,6 +1,10 @@
 return {
   "sindrets/diffview.nvim",
   cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
+  keys = {
+    { "<leader>dfo", "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
+    { "<leader>dfc", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
+  },
   config = function()
     require("diffview").setup({
       diff_binaries = false, -- Show binary files in diff views.
