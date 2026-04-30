@@ -12,3 +12,21 @@ vim.opt.fileencoding = "utf-8"
 
 -- jj to escape insert mode
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
+
+-- Diagnostic display settings
+vim.diagnostic.config({
+  severity_sort = true,
+  float = {
+    border = "single",
+    title = "Diagnostics",
+    header = {},
+    suffix = {},
+    format = function(diag)
+      if diag.code then
+        return string.format("[%s](%s): %s", diag.source, diag.code, diag.message)
+      else
+        return string.format("[%s]: %s", diag.source, diag.message)
+      end
+    end,
+  },
+})

@@ -124,6 +124,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "slim",
       },
     },
   },
